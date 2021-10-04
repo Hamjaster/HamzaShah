@@ -1,0 +1,86 @@
+
+
+@font-face {
+    font-family: Cheyenne Sans;
+    src: url(fonts/Web.ttf);
+}
+@font-face {
+    font-family:Cheyenne Sans ExtraBold ;
+    src: url(fonts/Web2.ttf);
+}
+@font-face {
+    font-family:Cheyenne Sans Medium ;
+    src: url(fonts/Web3.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Cheyenne Sans Medium";
+
+}
+.headings{
+    text-align: left;
+    text-transform: uppercase;
+    font-size:27px;
+    font-weight: 700;
+    font-family:'Cheyenne Sans' ;
+    margin-top: 12px;
+    margin-bottom: 20px; 
+    
+}
+.img{
+
+   width: 74vw;
+  
+  
+  
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Cheyenne Sans Medium';
+    margin-top: 68px;
+    border: 2px dashed tomato;
+    padding: 20px;
+}
+h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+p{
+    letter-spacing: 1px;
+    font-size: 19px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+hr{
+    height: 2px;
+    color: grey;
+    border: none;
+    border-radius: 2px;
+    background-color: grey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+img:hover{
+    border: 1px solid aqua;
+
+
+}
+h1:hover{
+    background-color: tomato;
+    color: rgb(213, 252, 252);
+}
+.full{
+    margin-left:5vw;
+    margin-right:30px;
+}
+ul{
+    list-style: square;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV Hamza</title>
+  <link rel="shortcut icon" type="image/png" href="lOGO.png"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero-image">
+    <nav>
+      <ul class="container">
+        <li class="items"><a href="#">Home</a></li>
+        <li class="items"><a href="blogs/blogs.html">Blogs</a></li>
+        <li class="items"><a href="projects/projects.html">Projects</a></li>
+        <li class="image"><img onclick="darkk()" id="icon" width="30px" height="30px" src="dark theme icon/moon.png" alt=""></li>
+      </ul>
+      <!-- <ul class="icons">
+        <li> <a target="_" href="https://twitter.com/dev_hamzashah"> <img width="50px" id="twitter" src="icons/twitterW.png" alt="twitter png"></img> </a> </li>
+        <li> <a target="_" href="https://www.youtube.com/channel/UC5taoBtckhl4Y8z_wwWX0QA"> <img width="50px" id="yt" src="icons/ytW.png" alt="youtube png"></img> </a> </li>
+      </ul> -->
+     
+    </nav>
+<div class="hero-text">Hy I am <span class="hamza">Hamza</span> Shah</div>
+<div class="hero-para">You might not think that programmers are artists, but programming is 
+  an extremely creative profession. It's logic-based creativity.</div>
+<div class="btndad">
+<a class="hreft" href="CV/cv-upgraded.html"><button class="btn-online">View CV</button></a> 
+<button onclick="cl()" class="btn-down">More About ME</button>
+</div>
+</div>
+
+<div class="container-2">
+<div id="head" class="head">
+<h2>Lets Introduce myself</h2>
+</div>
+<div class="intro">
+Welcome to this Virtual World of Technology
+and Computer Science, Nowadays Most of Human
+efforts are minimized with Computers. Every
+thing has became more easier than before.
+ I am <b>Hamza</b> , A Beginner to the Computational
+Services such as Web Development,
+Artificial Intelligence and Machine Learning.
+This is my first attempt to Web Development 
+by desinging this Website. I would be uploading 
+my weekly projects on this website and little 
+bits of Blogs. You can also check my Cv above. <br>
+ <b>Thank You</b>
+
+
+
+</div>
+</div>
+
+<script>
+  var element = document.getElementById("head");
+  // var twitter = document.getElementById("twitter")
+  // var yt = document.getElementById("yt")
+  
+  
+  function cl(){
+
+    element.scrollIntoView({behavior: "smooth"});
+    var icon = document.getElementById('icon');
+  }
+ 
+  function darkk(){
+    document.body.classList.toggle('dark-theme')
+    if(document.body.classList.contains('dark-theme')){
+        icon.src = "dark theme icon/sun.png"
+        // yt.src = "icons/yt.png"
+        // twitter.src = "icons/twitter.png"
+        
+      }else{
+        
+        icon.src = "dark theme icon/moon.png"
+        // yt.src = "icons/ytW.png"
+        // twitter.src = "icons/twitterW.png"
+    }
+  }
+
+
+
+
+</script>
+
+</body>
+</html>
