@@ -150,6 +150,7 @@ align-items: flex-end;
 	margin-top: 22px;
 	text-transform: uppercase;
 	font-size: 20px;
+	margin-right:10px ;
 	font-family: 'Noto Sans', sans-serif;
 }
 .container li a{
@@ -412,10 +413,10 @@ align-items: flex-end;
 @media(max-height:540px){
 	.hero-para{
 		
-		margin-top: 22px;
+		margin-top: 9px;
 		
 	}
 	.btndad{
-		height: 113vh;
+		height: 109vh;
 	}
 }
