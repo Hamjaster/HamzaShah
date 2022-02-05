@@ -400,7 +400,7 @@ align-items: flex-end;
 	}
 	
 }
-@media(max-height:660px){
+/* @media(max-height:660px){
 	.hero-para{
 		
 		margin-top: 4px;
@@ -409,14 +409,14 @@ align-items: flex-end;
 	.btndad{
 		height: 104vh;
 	}
-}
+} */
 @media(max-height:540px){
 	.hero-para{
 		
-		margin-top: 9px;
+		margin-top: 13px;
 		
 	}
 	.btndad{
-		height: 109vh;
+		height: 107vh;
 	}
 }
