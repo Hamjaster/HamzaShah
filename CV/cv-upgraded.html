@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>CV-Upgraded</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+    /* body {
+   -moz-transform: scale(0.8, 0.8);
+   zoom: 0.8;
+   zoom: 80%;
+} */
+    .hamza img {
+        width: 229px;
+        border: 2px;
+        border-radius: 200px;
+        position: relative;
+        top: -1px;
+        left: 83px;
+
+    }
+    .edu_a{
+        text-decoration: none;
+    }
+    .edu_a:hover{
+        text-decoration: underline;
+        color:rgb(46, 134, 250) ;
+        
+    }
+
+    h2 {
+        position: relative;
+        top: 4px;
+        right: 71px;
+        font-size: 80px;
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        color: rgba(102, 102, 102, 0.979);
+
+    }
+
+    .upper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lower {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 3px;
+        /* border: 2px solid aqua; */
+    }
+
+    .lower>*>h3 {
+        font-size: 55px;
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(46, 134, 250);
+        text-transform: uppercase;
+        padding: 0%;
+        margin-bottom: 20px;
+    }
+
+    .lower .left {
+        margin-left: -24px;
+        margin-top: -22px;
+        padding-left: 24px;
+        padding-top: -22px;
+        width: 403px;
+
+
+
+    }
+
+    .lower .right {
+
+
+        margin-top: -22px;
+    position: relative;
+    left: 25px;
+    padding-left: -33px;
+    /* border: 2px solid red; */
+    width: 332px;
+    margin: -14px;
+
+    }
+
+    span {
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid black;
+        height: 1224px;
+
+    }
+
+    .left p {
+        width: 504px;
+        font-size: 1.4rem;
+
+
+    }
+
+    .one img {
+        width: 60px;
+        margin: 10px 0px;
+    }
+
+    .one {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .cnt {
+        position: relative;
+        right: 31px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.4rem;
+        top: 30px;
+    }
+    
+    #cnt1 {
+        position: relative;
+        right: 54px;
+    }
+    
+    #cnt2 {
+        position: relative;
+        right: 130px;
+    }
+    
+    #cnt3 {
+        position: relative;
+        right: 99px;
+    }
+    
+    #cnt4 {
+        position: relative;
+        right: 120px;
+    }
+    
+    .two img {
+        width: 72px;
+        margin: 10px 0px;
+    }
+    
+    .hobbies {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .two {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    #hobby_img1 img {
+        position: relative;
+        right: 22px;
+        
+    }
+    
+    #hobby_img2 img {
+        position: relative;
+        right: 21px;
+        width: 83px;
+        
+    }
+    
+    #hobby_img3 img {
+        position: relative;
+        right: 39px;
+        width: 87px;
+        
+    }
+    
+    #hobby_img1 .cnt {
+        position: relative;
+        right: 38px;
+        
+    }
+    
+    #hobby_img2 .cnt {
+        position: relative;
+        right: 24px;
+        
+    }
+    
+    #hobby_img3 .cnt {
+        position: relative;
+        right: 71px;
+    }
+    
+    .right-align {
+        position: relative;
+        right: 132px;
+    }
+    
+    .para-1 {
+        width: 489px;
+    font-size: 1.3rem;
+    padding-right: 20px;
+    /* border: 2px solid black; */
+    }
+    .main-1{
+        margin: 6px 0px;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(73, 73, 73, 0.979);
+        width: 354px;
+        
+    }
+    .low-1{
+        
+        margin: 6px 0px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        color: rgba(102, 102, 102, 0.979);
+        
+        
+    }
+    .lower-1{
+        color: rgba(102, 102, 102, 0.979);
+        margin: 6px 0px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+      
+        
+        
+        
+    }
+    .rut{
+        display: flex;
+        flex-direction: column;
+    }
+    .right #right-head{
+        font-size: 55px;
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(46, 134, 250);
+        text-transform: uppercase;
+        padding: 0%;
+        margin-bottom: 20px;
+    }
+
+    @media(max-width:522px){
+        .lower>*>h3 {
+    font-size: 9vw;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(46, 134, 250);
+    text-transform: uppercase;
+    padding: 0%;
+    margin-bottom: 20px;
+}   
+.one {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 101vw;
+}
+.cnt {
+    position: relative;
+    right: 31px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6vw;
+    top: 30px;
+}
+.one img {
+    width: 77px;
+    margin: 11px 25px;
+}
+        h2 {
+    position: relative;
+    top: 43px;
+    right: -34px;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 0.979);
+}
+    .hamza img {
+    width: 42vh;
+    border: 2px;
+    border-radius: 200px;
+    position: relative;
+    top: 3vw;
+    left: 22px;
+}
+.lower {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 3px;
+    flex-direction: column;
+    /* border: 2px solid aqua; */
+    
+}
+.lower .right {
+    margin-top: -22px;
+    position: relative;
+    left: 152px;
+    padding-left: -33px;
+    /* border: 2px solid red; */
+    width: 81vw;
+    /* margin: 6px; */
+}
+span{
+    display: none;
+}
+.left p {
+    width: 85vw;
+    font-size: 1.8rem;
+}
+.two {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 501px;
+}
+.right #right-head {
+    font-size: 49px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(46, 134, 250);
+    text-transform: uppercase;
+    padding: 0%;
+    margin-bottom: 20px;
+}
+.main-1 {
+    margin: 6px 0px;
+    font-size: 29px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(73, 73, 73, 0.979);
+    width: 354px;
+}
+.para-1 {
+    width: 358px;
+    font-size: 1.6rem;
+    padding-right: 41px;
+    /* border: 2px solid black; */
+}
+.low-1 {
+    margin: 6px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    color: rgba(102, 102, 102, 0.979);
+}
+.para-1 {
+    width: 358px;
+    font-size: 1.6rem;
+    padding-right: 41px;
+    /* border: 2px solid black; */
+}
+
+.two {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 483px;
+}
+#hobby_img1 img {
+    position: relative;
+    right: 10px;
+}
+#hobby_img2 img {
+    position: relative;
+    right: 12px;
+    width: 87px;
+}
+#hobby_img3 img {
+    position: relative;
+    right: 32px;
+    width: 87px;
+}
+}
+@media(max-width:990px){
+    .lower .right {
+    margin-top: -22px;
+    position: relative;
+    left: 98px;
+    padding-left: -33px;
+    /* border: 2px solid red; */
+    width: 29vw;
+    margin: -14px;
+}
+h2 {
+    position: relative;
+    top: 12px;
+    right: -8px;
+    font-size: 9vw;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 0.979);
+}
+.hamza img {
+    width: 42vh;
+    border: 2px;
+    border-radius: 200px;
+    position: relative;
+    top: 3vw;
+    left: 83px;
+}
+.lower .left {
+    margin-left: -15px;
+    margin-top: -22px;
+    padding-left: 24px;
+    padding-top: -22px;
+    width: 41vw;
+}
+    .lower>*>h3 {
+    font-size: 6vw;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(46, 134, 250);
+    text-transform: uppercase;
+    padding: 0%;
+    margin-bottom: 20px;
+}
+.left p {
+    width: 43vw;
+    font-size: 1.4rem;
+}
+.para-1 {
+    width: 43vw;
+    font-size: 1.4rem;
+}
+.one {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 52vw;
+}
+.one img {
+    width: 60px;
+    margin: 10px 0px;
+}
+.cnt {
+    position: relative;
+    right: 31px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.7vw;
+    top: 30px;
+}
+
+
+.two {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 299px;
+}
+.right #right-head {
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(46, 134, 250);
+    text-transform: uppercase;
+    padding: 0%;
+    margin-bottom: 20px;
+}
+.main-1 {
+    margin: 6px 0px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(73, 73, 73, 0.979);
+    width: 354px;
+}
+.lower-1 {
+    color: rgba(102, 102, 102, 0.979);
+    margin: 6px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+.para-1 {
+    width: 358px;
+    font-size: 1.3rem;
+    padding-right: 41px;
+    /* border: 2px solid black; */
+}
+
+}
+@media screen and (min-width: 920px) and (max-width: 988px){
+    .one {
+    
+    width: 48vw;
+} 
+
+}
+@media(max-width:620px){
+  
+    h2 {
+    position: relative;
+    top: 22px;
+    right: -89px;
+    font-size: 66px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 0.979);
+    width: 775px;
+    /* border: 2px solid; */
+    padding: 0px 0px;
+    height: 92px;
+    margin-right: -306px;
+    /* border: 2px solid; */
+}
+.hamza img {
+width: 198px;
+border: 2px;
+border-radius: 200px;
+position: relative;
+top: 7px;
+left: 15px;
+}
+.lower {
+display: flex;
+justify-content: space-around;
+margin: 40px 3px;
+flex-direction: column;
+/* border: 2px solid aqua; */
+}
+.lower .right {
+margin-top: -22px;
+position: relative;
+left: 148px;
+padding-left: -33px;
+/* border: 2px solid red; */
+width: 332px;
+margin: -14px;
+}
+span{
+display: none;
+}
+.two {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 97vw;
+}
+.left p {
+    width: 972px;
+    font-size: 1.8rem;
+}
+.para-1 {
+    width: 937px;
+    font-size: 1.8rem;
+}
+.one {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 410px;
+}
+.cnt {
+position: relative;
+right: 31px;
+font-family: 'Ubuntu', sans-serif;
+font-size: 4.9vw;
+top: 30px;
+}
+.one img {
+width: 75px;
+margin: 10px 51px;
+}
+.one img {
+width: 75px;
+margin: 10px 51px;
+}
+.lower>*>h3 {
+    font-size: 59px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(46, 134, 250);
+    text-transform: uppercase;
+    padding: 0%;
+    margin-bottom: 20px;
+}
+.main-1 {
+    margin: 6px 0px;
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(73, 73, 73, 0.979);
+    width: 447px;
+}
+.low-1 {
+    margin: 6px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 31px;
+    width: 372px;
+    color: rgba(102, 102, 102, 0.979);
+}
+.lower-1 {
+    color: rgba(102, 102, 102, 0.979);
+    margin: 6px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+.para-1 {
+   
+    font-size: 1.9rem;
+    padding-right: 41px;
+    width: 937px;
+    /* border: 2px solid black; */
+}
+
+
+}
+@media screen and (min-width: 430px) and (max-width: 515px){
+    .one {
+   
+    width: 460px;
+}
+.left p {
+    width: 875px;
+    
+}
+.para-1 {
+    width: 875px;
+    
+}
+}
+@media screen and (min-width: 516px) and (max-width: 620px){
+    .one {
+   
+    width: 552px;
+
+}
+
+
+}
+@media(max-width:300px){
+    h2 {
+    position: relative;
+    top: 43px;
+    right: -32px;
+    font-size: 47px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 0.979);
+    width: 775px;
+    /* border: 2px solid; */
+    padding: 0px 0px;
+    height: 92px;
+    margin-right: -306px;
+    /* border: 2px solid; */
+}
+    .one{
+        width: 478px;
+    }
+    .cnt{
+        font-size: 26px;
+    }
+    .two{
+        width: 478px;
+        
+    }
+    .left p {
+        width: 618px;
+        
+    }
+    .para-1 {
+        width: 618px;
+        
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1113px){
+    .lower .right {
+        
+        left: 8vw;
+        
+    }
+    
+}
+@media screen and (min-width: 300px) and (max-width: 430px){
+    h2 {
+    position: relative;
+    top: 29px;
+    right: -45px;
+    font-size: 59px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 0.979);
+    width: 775px;
+    /* border: 2px solid; */
+    padding: 0px 0px;
+    height: 92px;
+    margin-right: -306px;
+    /* border: 2px solid; */
+}
+    .cnt{
+        font-size: 26px;
+    }
+    .left p {
+        width: 677px;
+        
+    }
+    .one{
+        width: 478px;
+    }
+    .para-1 {
+    width: 677px;
+    
+}
+.two{
+        width: 478px;
+        
+    }
+
+}
+@media screen and (min-width: 850px) and (max-width: 1000px){
+    
+    .two{
+        width: 478px;
+        
+    }
+}
+@media screen and (min-width: 621px) and (max-width: 720px){
+    h2 {
+    top: 20px;
+    left: 117px;
+    font-size: 61px;
+}
+}
+@media(max-width:239px){
+    h2 {
+    position: relative;
+    top: 43px;
+    right: -33px;
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 0.979);
+    width: 775px;
+    /* border: 2px solid; */
+    padding: 0px 0px;
+    height: 92px;
+    margin-right: -431px;
+    /* border: 2px solid; */
+}
+}
+/* .cnt{font-size: 2vw;} */
+</style>
+
+<body>
+    <div class="upper">
+        <div class="hamza">
+            <img src="imgs/hamza.jpg" alt="">
+        </div>
+        <h2>Hamza shah</h2>
+    </div>
+    <div class="lower">
+        <div class="left">
+            <h3>profile</h3>
+            <p>My name is hamza, And I am 14 years old, Studying in Grade 9.</p>
+            <p>I just like to talk with my computer with the help of codes, programming languages such as C++, C, Python etc. I am also intereseted in making websites using Html, Css & JavaScript. </p>
+            <h3>Contact</h3>
+            <div class="one">
+                <img src="imgs/message.png" alt="">
+                <div id="cnt1" class="cnt">hamzacodes@gmail.com</div>
+            </div>
+            <div class="one">
+                <img src="imgs/contact.png" alt="">
+                <div id="cnt2" class="cnt">+92 999 9999999</div>
+            </div>
+            <div class="one">
+                <img src="imgs/home.png" alt="">
+                <div id="cnt3" class="cnt">Pakistan, Wah Cantt</div>
+            </div>
+            <div class="one">
+                <img src="imgs/web.png" alt="">
+                <div id="cnt4" class="cnt">HamzaCodes.com</div>
+            </div>
+            <h3>Hobbies</h3>
+            <div class="hobbies">
+                <div id="hobby_img1" class="two">
+                    <img src="imgs/web-dev.png" alt="">
+                    <div class="cnt" id="cnt_1">Web Development</div>
+                </div>
+                <div id="hobby_img2" class="two">
+                    <img src="imgs/rubik0.png" alt="">
+                    <div class="cnt" id="cnt_2">Rubik's Cube Solving</div>
+                </div>
+                <div id="hobby_img3" class="two">
+                    <img src="imgs/c++.png" alt="">
+                    <div class="cnt" id="cnt_3">Programming</div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <span class="line"></span>
+
+<div class="rut">
+
+        <div class="right">
+            
+            <a class="edu_a" href="education/education.html"> <h3 class="right-align" id="right-head">Education</h3></a>
+            <h4 class="right-align main-1">Nova City School</h4>
+            <h5 class="right-align low-1">Grade 6 to 8</h5>
+            <h5 class="right-align lower-1">2016-2018</h5>
+            <p class="right-align para-1">Graduated from five to eight class under the provision of Nova City School located in New City Phase II, Wah Cantt, Pakistan.</p>
+
+            <h4 class="right-align main-1">Wise International School</h4>
+            <h5 class="right-align low-1">9th and Matric</h5>
+            <h5 class="right-align lower-1">2020-2021</h5>
+            <p class="right-align para-1">In Wise School, Completed eight and preparing for the boards of 9th
+            </p>
+
+
+
+        </div>
+        <div class="right">
+            
+            <h3 class="right-align" id="right-head">Experience</h3>
+            <h4 class="right-align main-1">Computer Science</h4>
+            <h5 class="right-align low-1">Programming</h5>
+            <h5 class="right-align lower-1">2017</h5>
+            <p class="right-align para-1">Computer Science is the Study of computers and computational science.<br> <br> 4 years of Experience in Computer Science.</p>
+                
+         
+            <h4 class="right-align main-1">Web Development</h4>
+            <h5 class="right-align low-1">Html, Css and JavaScript</h5>
+            <h5 class="right-align lower-1">2019</h5>
+            <p class="right-align para-1">1 year 5 months Experience of Web Development with number of languages.
+
+
+
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
