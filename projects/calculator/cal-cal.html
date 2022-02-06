@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator By HamzaCodes</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+    background: #091921;
+    font-family: 'Ubuntu', sans-serif;
+}
+.calculator{
+    display: grid;
+    position: relative;
+}
+#screen{
+    grid-column: span 4;
+    height: 100px;
+    border: none;
+    font-size: 20px;
+    text-align: right;
+    outline: none;
+}
+.calculator span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    /* background: #0c2835; */
+    color: rgb(255, 255, 255);
+    place-items: center;
+    /* border: 1px solid rgba(0, 0, 0, .1); */
+    font-size: 21px;
+
+}
+.calculator span.clear{
+grid-column: span 2;
+width: 122px;
+background: #ff3077;
+}
+.calculator span.clear:hover{
+
+background: #ff3077;
+}
+.calculator span.plus{
+    grid-row: span 2;
+    height: 122px;
+}
+.calculator span.equal{
+    
+    background: #03b1ff;
+}
+.calculator span.equal:hover{
+    
+    background: #03b1ff;
+}
+@media(min-width:730px){
+    
+    
+        
+    
+    .calculator span {
+        width: 118px;
+        height: 100px;
+        font-size: 31px;
+    }
+    .calculator span:hover {
+      background: rgb(76, 209, 83);
+    }
+    
+    .calculator span.clear{
+    
+    width: 237px;
+   
+    }
+    .calculator span.plus{
+       
+        height: 202px;
+    }
+    
+    #screen{
+        height: 150px;
+        font-size: 38px;
+    }
+
+
+
+
+}
+</style>
+</head>
+<body>
+    <audio id='sound' src="Tap.mp3"></audio>
+    <form action="" class="calculator">
+        <input type="text" id="screen">
+        <span onclick="tap()" class="num clear">C</span>
+        <span onclick="tap()" class="num">÷</span>
+        <span onclick="tap()" class="num">x</span>
+      
+        <span onclick="tap()" class="num">7</span>
+        <span onclick="tap()" class="num">8</span>
+        <span onclick="tap()" class="num">9</span>
+        <span onclick="tap()" class="num">-</span>
+        <span onclick="tap()" class="num">4</span>
+        <span onclick="tap()" class="num">5</span>
+        <span onclick="tap()" class="num">6</span>
+        <span onclick="tap()" class="num plus">+</span>
+        <span onclick="tap()" class="num">3</span>
+        <span onclick="tap()" class="num">2</span>
+        <span onclick="tap()" class="num">1</span>
+        <span onclick="tap()" class="num">0</span>
+        <span onclick="tap()" class="num">.</span>
+        <span onclick="tap()" class="num">DEL</span>
+        <span onclick="tap()" class="num equal">=</span>
+
+
+    </form>
+
+
+</body>
+<script>
+    let screen = document.getElementById('screen');
+    buttons = document.querySelectorAll('span');
+    let sound = document.getElementById('sound')
+    function tap(){
+        sound.play();
+        // alert('warning')
+    }
+    let screenValue = '';
+    
+    for (item of buttons) {
+        item.addEventListener('click', (e) => {
+            buttonText = e.target.innerText;
+            console.log('Button text is ', buttonText);
+            if (buttonText == 'x') {
+                buttonText = '*';
+                screenValue += buttonText;
+                screen.value = screenValue;
+            }
+            else if (buttonText == '÷') {
+                buttonText = '/';
+                screenValue += buttonText;
+                screen.value = screenValue;
+            }
+            else if (buttonText == '+') {
+                buttonText = '+';
+                screenValue += buttonText;
+                screen.value = screenValue;
+            }
+            else if (buttonText == '-') {
+                buttonText = '-';
+                screenValue += buttonText;
+                screen.value = screenValue;
+            }
+            else if (buttonText == 'C') {
+                
+                screenValue = "";
+                screen.value = screenValue;
+            }
+            else if (buttonText == 'DEL') {
+                
+                screenValue = screenValue.slice(0,-1)
+                screen.value = screenValue;
+            }
+            else if (buttonText == '=') {
+                screen.value = eval(screenValue);
+            }
+            else{
+                screenValue += buttonText 
+                screen.value = screenValue
+            }
+        
+        })
+    }
+    </script>
+</html>
