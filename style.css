@@ -10,7 +10,7 @@
 	--hero_black: url("bg2.jpg");
 	--black:#000000;
 	--shadow_black:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	--desc:rgb(195, 195, 195);
+	--desc:rgb(166, 166, 166);
 	
 }
 .dark-theme{
@@ -54,6 +54,7 @@ body, html {
 	transition: all 0.6s;
 	
 }
+
 .hero-para{
 	width: 70%;
 	font-size: 25px;
@@ -88,7 +89,7 @@ body, html {
 .nav-items{
 
 	padding: 16px 101px;
-	font-size: 19px;
+	font-size: 22px;
 }
 .logo{
 	margin-right: auto;
@@ -235,7 +236,7 @@ align-items: flex-end;
 	margin-top: -19px;
 	font-size: 22px;
 	padding: 55px 65px;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: var(--black);
 	background: var(--white);
 }
@@ -270,6 +271,12 @@ footer{
 .yt{
 	position: relative;
 	bottom: 4px;
+}
+.btn-down, .btn-online{
+	border-radius: 44px;
+}
+.copyright{
+	margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1040px) {
@@ -369,17 +376,15 @@ footer{
  
  
   @media screen and (max-width: 410px) {
-	  body{
-		  
-	  }
+	  
 	.nav-items{
 
 		padding: 8px 12px;
 		
 	}
 	.hero-head{
-		font-size: 30px;
-		width: 70%;
+		font-size: 42px;
+		
 		text-align: center;
 
 	}
@@ -391,18 +396,19 @@ footer{
 	}
 	.hero-head-first{
 		text-align: center;
-		font-size: 59px;
+		font-size: 83px;
 		
 	}
 	.hero-para{
 		font-size: 14px;
-		width: 90%;
+		width: 100%;
+		
 
 	}
-	.btn-down,.btn-online{
-		padding: 10px 16px;
-		margin: 6px 11px;
+	.btn-online{
+		margin-left: -15px;
 	}
+	
 	.container-2 h2{
 		font-size: 25px;
 	}
