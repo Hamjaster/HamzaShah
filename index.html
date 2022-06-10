@@ -9,76 +9,88 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="hero-image">
-    <nav>
-      <ul class="container">
-        <li class="items"><a href="#">Home</a></li>
-        <li class="items"><a href="blogs/blogs.html">Blogs</a></li>
-        <li class="items"><a href="projects/projects.html">Projects</a></li>
-        <li class="image"><img onclick="darkk()" id="icon" width="30px" height="30px" src="dark theme icon/moon.png" alt=""></li>
-      </ul>
-      <!-- <ul class="icons">
-        <li> <a target="_" href="https://twitter.com/dev_hamzashah"> <img width="50px" id="twitter" src="icons/twitterW.png" alt="twitter png"></img> </a> </li>
-        <li> <a target="_" href="https://www.youtube.com/channel/UC5taoBtckhl4Y8z_wwWX0QA"> <img width="50px" id="yt" src="icons/ytW.png" alt="youtube png"></img> </a> </li>
-      </ul> -->
-     
-    </nav>
-<div class="hero-text">Hy I'm <span class="hamza">Hamza</span> Shah</div>
-<div class="hero-para">You might not think that programmers are artists, but programming is 
-  an extremely creative profession. It's logic-based creativity.</div>
-<div class="btndad">
-<a class="hreft" href="CV/cv-upgraded.html"><button class="btn-online">View CV</button></a> 
-<button onclick="cl()" class="btn-down">More About ME</button>
+<div class="hero">
+
+<nav class="nav">
+
+ 
+<ul class="nav-list">
+  <li class="nav-items"> <a href="#"> Home</a></li>
+  <li class="nav-items"> <a href="blogs/blogs.html"> Blogs</a></li>
+  <li class="nav-items"> <a href="projects/projects.html"> Projects</a></li>
+  <li class="nav-items" onclick="dark()"> <img  id = "icon" src="dark theme icon/moon.png"  width = "35px"alt="" srcset=""></img></li>
+</ul>
+
+</nav>
+
+<div class="hero-text">
+ <h1 class="hero-head">
+    <div class="hero-head-first">Hy I'm</div> 
+    <span class="hamza">Hamza </span>
+     Shah</h1>
+<p class="hero-para">You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.</p>
+<div class="btn-dad">
+<button  class="btn-online"><a href="CV/cv-upgraded.html">View CV</a></button>
+<button onclick="cl()" class="btn-down">More about me</button>
 </div>
 </div>
+
+
+</div>
+
+
+
 
 <div class="container-2">
-<div id="head" class="head">
-<h2>Lets Introduce myself</h2>
+  <div class="intro-head"><h2>Lets Introduce myself,  </h2></div>
+  <div class="intro">
+    Welcome! Reader. In this developed world of Artificial Intelligence and Science, 
+    Maximum Human efforts are minimized with Computers, Machines, Robots, etc. Everything has
+    become easier than before. I am <b>Hamza</b>, A Beginner in the Computational Services such as Web
+    Development, Machine Learning, and even graphic designing. This is my first attempt at Web
+    Development by designing this Website. I would be uploading my weekly projects on this website 
+    and little bits of Blogs. You can also check my CV above. 
+    <div id="by"><b>Thank You</b></div>
+    </div>
+    
+ 
+
+<footer>
+  <div class="foot">
+  <ul class="social-list">
+    <li class="social-items"> <a href="https://twitter.com/dev_hamzashah"> <img src="icons/twitter.png"  width="30px" alt="" srcset=""></a></li>
+    <li class="social-items"> <a href="https://www.instagram.com/techy_hamza/?hl=en"><img src="icons/insta.png" width="30px"  alt="" srcset=""></a></li>
+    <li class="social-items yt"> <a href="https://www.youtube.com/channel/UCD6Jhr239WT0MK8vy6aX2vw"><img src="icons/yt.png" width="40px"  alt="" srcset=""></a></li>
+  </ul>
+  
 </div>
-<div class="intro">
-Welcome! Reader. In this developed world of Artificial Intelligence and Science
-, Maximum of Human
-efforts are minimized with Computers, Machines, Robots etc. Every
-thing has became more easier than before.
- I am <b>Hamza</b> , A Beginner to the Computational
-Services such as Web Development,
-Artificial Intelligence and Machine Learning.
-This is my first attempt to Web Development 
-by desinging this Website. I would be uploading 
-my weekly projects on this website and little 
-bits of Blogs. You can also check my Cv above. <br>
- <b>Thank You</b>
-
-
+</footer>
 
 </div>
 </div>
 
 <script>
-  var element = document.getElementById("head");
-  // var twitter = document.getElementById("twitter")
-  // var yt = document.getElementById("yt")
-  
-  
-  function cl(){
-
-    element.scrollIntoView({behavior: "smooth"});
-    var icon = document.getElementById('icon');
+  var element = document.getElementById("by")
+  function scroll(){
+    element.scrollIntoView({behavior:"smooth"})
   }
- 
-  function darkk(){
+  
+  function cl() {
+    scroll()
+  }
+  
+    
+  var icon = document.getElementById('icon');
+  function dark(){
     document.body.classList.toggle('dark-theme')
     if(document.body.classList.contains('dark-theme')){
         icon.src = "dark theme icon/sun.png"
-        // yt.src = "icons/yt.png"
-        // twitter.src = "icons/twitter.png"
+    
         
       }else{
         
         icon.src = "dark theme icon/moon.png"
-        // yt.src = "icons/ytW.png"
-        // twitter.src = "icons/twitterW.png"
+      
     }
   }
 
